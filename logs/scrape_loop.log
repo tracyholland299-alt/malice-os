@@ -1,0 +1,270 @@
+🔁 [Sat Oct 25 21:40:56 UTC 2025] Scrape cycle started...
+🔧 [Sat Oct 25 21:40:56 UTC 2025] Running: plugin_csv_ingest.py
+🔧 [Sat Oct 25 21:40:56 UTC 2025] Running: plugin_sql_ingest.py
+✅ SQL ingest complete.
+🔧 [Sat Oct 25 21:40:56 UTC 2025] Running: plugin_csv_to_sql.py
+✅ CSV → SQL ingest complete.
+🔧 [Sat Oct 25 21:40:57 UTC 2025] Running: plugin_sql_visualizer.py
+📊 Category Counts:
+ - data: 2
+ - info: 1
+🔧 [Sat Oct 25 21:40:57 UTC 2025] Running: plugin_sql_export_md.py
+📄 SQL → Markdown export complete.
+🔧 [Sat Oct 25 21:40:57 UTC 2025] Running: plugin_sql_export_json.py
+📤 SQL → JSON export complete.
+✅ [Sat Oct 25 21:40:57 UTC 2025] Scrape cycle complete.
+🔁 [Sat Oct 25 21:46:07 UTC 2025] Scrape cycle started...
+🔧 [Sat Oct 25 21:46:07 UTC 2025] Running: plugin_csv_ingest.py
+🔧 [Sat Oct 25 21:46:08 UTC 2025] Running: plugin_sql_ingest.py
+✅ SQL ingest complete.
+🔧 [Sat Oct 25 21:46:08 UTC 2025] Running: plugin_csv_to_sql.py
+✅ CSV → SQL ingest complete.
+🔧 [Sat Oct 25 21:46:08 UTC 2025] Running: plugin_sql_visualizer.py
+📊 Category Counts:
+ - data: 3
+ - info: 2
+🔧 [Sat Oct 25 21:46:08 UTC 2025] Running: plugin_sql_export_md.py
+📄 SQL → Markdown export complete.
+🔧 [Sat Oct 25 21:46:09 UTC 2025] Running: plugin_sql_export_json.py
+📤 SQL → JSON export complete.
+🔧 [Sat Oct 25 21:46:09 UTC 2025] Running: plugin_git_sync.py
+🔄 Syncing to GitHub...
+✅ Sync complete.
+🔧 [Sat Oct 25 21:46:10 UTC 2025] Running: plugin_threat_classifier.py
+🚨 Threat classification complete.
+🔧 [Sat Oct 25 21:46:10 UTC 2025] Running: plugin_dashboard_ui.py
+🧩 Dashboard UI placeholder — curses interface coming soon.
+🔧 [Sat Oct 25 21:46:10 UTC 2025] Running: plugin_packager.py
+📦 Suite packaged for resale.
+✅ [Sat Oct 25 21:46:11 UTC 2025] Scrape cycle complete.
+Traceback (most recent call last):
+  File "/home/userland/ScrapeForge/plugins/plugin_sql_ingest.py", line 4, in <module>
+    conn.execute("INSERT INTO harvest VALUES (?, ?, ?, ?, ?)", (
+sqlite3.OperationalError: table harvest has 6 columns but 5 values were supplied
+❌ Error in plugin_sql_ingest.py
+Traceback (most recent call last):
+  File "/home/userland/ScrapeForge/plugins/plugin_csv_to_sql.py", line 8, in <module>
+    conn.execute("INSERT INTO harvest VALUES (?, ?, ?, ?, ?)", (
+sqlite3.OperationalError: table harvest has 6 columns but 5 values were supplied
+❌ Error in plugin_csv_to_sql.py
+📊 Category Counts:
+ - data: 3
+ - info: 2
+📄 SQL → Markdown export complete.
+📤 SQL → JSON export complete.
+🔄 Syncing to GitHub...
+✅ Sync complete.
+Traceback (most recent call last):
+  File "/home/userland/ScrapeForge/plugins/plugin_threat_classifier.py", line 4, in <module>
+    conn.execute("ALTER TABLE harvest ADD COLUMN severity TEXT")
+sqlite3.OperationalError: duplicate column name: severity
+❌ Error in plugin_threat_classifier.py
+🧩 Dashboard UI placeholder — curses interface coming soon.
+📦 Suite packaged for resale.
+  File "/home/userland/ScrapeForge/plugins/plugin_shell_autofix.py", line 6
+    fixed = []; for line in lines:
+                ^
+SyntaxError: invalid syntax
+❌ Error in plugin_shell_autofix.py
+  File "/home/userland/ScrapeForge/plugins/plugin_help_engine.py", line 1
+    print("🧠 MALICE.OS™ Help Engine:\\n- Run: bash maliceos_plugin_runner.sh\\n- Inject: bash maliceos_auto_injector.sh\\n- Master: bash maliceos_ultimate_runner.sh\\n- View logs: cat logs/plugin_runner.log\\n- Export: see export/ folder\\n- DB query: sqlite3 output/autonomous/autonomous.db \\"SELECT * FROM harvest;\\"")
+                                                                                                                                                                                                                                                                                                            ^
+SyntaxError: invalid syntax
+❌ Error in plugin_help_engine.py
+Traceback (most recent call last):
+  File "/home/userland/ScrapeForge/plugins/plugin_sql_ingest.py", line 4, in <module>
+    conn.execute("INSERT INTO harvest VALUES (?, ?, ?, ?, ?)", (
+sqlite3.OperationalError: table harvest has 6 columns but 5 values were supplied
+Traceback (most recent call last):
+  File "/home/userland/ScrapeForge/plugins/plugin_sql_ingest.py", line 4, in <module>
+    conn.execute("INSERT INTO harvest VALUES (?, ?, ?, ?, ?)", (
+sqlite3.OperationalError: table harvest has 6 columns but 5 values were supplied
+❌ Error in plugin_sql_ingest.py
+Traceback (most recent call last):
+  File "/home/userland/ScrapeForge/plugins/plugin_csv_to_sql.py", line 8, in <module>
+    conn.execute("INSERT INTO harvest VALUES (?, ?, ?, ?, ?)", (
+sqlite3.OperationalError: table harvest has 6 columns but 5 values were supplied
+❌ Error in plugin_csv_to_sql.py
+📊 Category Counts:
+ - data: 3
+ - info: 2
+📄 SQL → Markdown export complete.
+📤 SQL → JSON export complete.
+🔄 Syncing to GitHub...
+✅ Sync complete.
+Traceback (most recent call last):
+  File "/home/userland/ScrapeForge/plugins/plugin_threat_classifier.py", line 4, in <module>
+    conn.execute("ALTER TABLE harvest ADD COLUMN severity TEXT")
+sqlite3.OperationalError: duplicate column name: severity
+❌ Error in plugin_threat_classifier.py
+🧩 Dashboard UI placeholder — curses interface coming soon.
+📦 Suite packaged for resale.
+  File "/home/userland/ScrapeForge/plugins/plugin_shell_autofix.py", line 6
+    fixed = []; for line in lines:
+                ^
+SyntaxError: invalid syntax
+❌ Error in plugin_shell_autofix.py
+  File "/home/userland/ScrapeForge/plugins/plugin_help_engine.py", line 1
+    print("🧠 MALICE.OS™ Help Engine:\\n- Run: bash maliceos_plugin_runner.sh\\n- Inject: bash maliceos_auto_injector.sh\\n- Master: bash maliceos_ultimate_runner.sh\\n- View logs: cat logs/plugin_runner.log\\n- Export: see export/ folder\\n- DB query: sqlite3 output/autonomous/autonomous.db \\"SELECT * FROM harvest;\\"")
+                                                                                                                                                                                                                                                                                                            ^
+SyntaxError: invalid syntax
+❌ Error in plugin_help_engine.py
+Traceback (most recent call last):
+  File "/home/userland/ScrapeForge/plugins/plugin_sql_ingest.py", line 4, in <module>
+    conn.execute("INSERT INTO harvest VALUES (?, ?, ?, ?, ?)", (
+sqlite3.OperationalError: table harvest has 6 columns but 5 values were supplied
+Traceback (most recent call last):
+  File "/home/userland/ScrapeForge/plugins/plugin_sql_ingest.py", line 4, in <module>
+    conn.execute("INSERT INTO harvest VALUES (?, ?, ?, ?, ?)", (
+sqlite3.OperationalError: table harvest has 6 columns but 5 values were supplied
+❌ Error in plugin_sql_ingest.py
+Traceback (most recent call last):
+  File "/home/userland/ScrapeForge/plugins/plugin_csv_to_sql.py", line 8, in <module>
+    conn.execute("INSERT INTO harvest VALUES (?, ?, ?, ?, ?)", (
+sqlite3.OperationalError: table harvest has 6 columns but 5 values were supplied
+❌ Error in plugin_csv_to_sql.py
+📊 Category Counts:
+ - data: 3
+ - info: 2
+📄 SQL → Markdown export complete.
+📤 SQL → JSON export complete.
+🔄 Syncing to GitHub...
+✅ Sync complete.
+Traceback (most recent call last):
+  File "/home/userland/ScrapeForge/plugins/plugin_threat_classifier.py", line 4, in <module>
+    conn.execute("ALTER TABLE harvest ADD COLUMN severity TEXT")
+sqlite3.OperationalError: duplicate column name: severity
+❌ Error in plugin_threat_classifier.py
+🧩 Dashboard UI placeholder — curses interface coming soon.
+📦 Suite packaged for resale.
+  File "/home/userland/ScrapeForge/plugins/plugin_shell_autofix.py", line 6
+    fixed = []; for line in lines:
+                ^
+SyntaxError: invalid syntax
+❌ Error in plugin_shell_autofix.py
+  File "/home/userland/ScrapeForge/plugins/plugin_help_engine.py", line 1
+    print("🧠 MALICE.OS™ Help Engine:\\n- Run: bash maliceos_plugin_runner.sh\\n- Inject: bash maliceos_auto_injector.sh\\n- Master: bash maliceos_ultimate_runner.sh\\n- View logs: cat logs/plugin_runner.log\\n- Export: see export/ folder\\n- DB query: sqlite3 output/autonomous/autonomous.db \\"SELECT * FROM harvest;\\"")
+                                                                                                                                                                                                                                                                                                            ^
+SyntaxError: invalid syntax
+❌ Error in plugin_help_engine.py
+🔍 Scanned 3 seeds, found 131 targets.
+🌐 Scraped 76 live pages.
+📦 Rebuilt metadata for 2 repos.
+🔍 Scanned 3 seeds, found 131 targets.
+🌐 Scraped 76 live pages.
+📦 Rebuilt metadata for 2 repos.
+Traceback (most recent call last):
+  File "/home/userland/ScrapeForge/plugins/plugin_sql_ingest.py", line 4, in <module>
+    conn.execute("INSERT INTO harvest VALUES (?, ?, ?, ?, ?)", (
+sqlite3.OperationalError: table harvest has 6 columns but 5 values were supplied
+❌ Error in plugin_sql_ingest.py
+Traceback (most recent call last):
+  File "/home/userland/ScrapeForge/plugins/plugin_csv_to_sql.py", line 8, in <module>
+    conn.execute("INSERT INTO harvest VALUES (?, ?, ?, ?, ?)", (
+sqlite3.OperationalError: table harvest has 6 columns but 5 values were supplied
+❌ Error in plugin_csv_to_sql.py
+📊 Category Counts:
+ - data: 3
+ - info: 2
+📄 SQL → Markdown export complete.
+📤 SQL → JSON export complete.
+🔄 Syncing to GitHub...
+✅ Sync complete.
+Traceback (most recent call last):
+  File "/home/userland/ScrapeForge/plugins/plugin_threat_classifier.py", line 4, in <module>
+    conn.execute("ALTER TABLE harvest ADD COLUMN severity TEXT")
+sqlite3.OperationalError: duplicate column name: severity
+❌ Error in plugin_threat_classifier.py
+🧩 Dashboard UI placeholder — curses interface coming soon.
+📦 Suite packaged for resale.
+  File "/home/userland/ScrapeForge/plugins/plugin_shell_autofix.py", line 6
+    fixed = []; for line in lines:
+                ^
+SyntaxError: invalid syntax
+❌ Error in plugin_shell_autofix.py
+  File "/home/userland/ScrapeForge/plugins/plugin_help_engine.py", line 1
+    print("🧠 MALICE.OS™ Help Engine:\\n- Run: bash maliceos_plugin_runner.sh\\n- Inject: bash maliceos_auto_injector.sh\\n- Master: bash maliceos_ultimate_runner.sh\\n- View logs: cat logs/plugin_runner.log\\n- Export: see export/ folder\\n- DB query: sqlite3 output/autonomous/autonomous.db \\"SELECT * FROM harvest;\\"")
+                                                                                                                                                                                                                                                                                                            ^
+SyntaxError: invalid syntax
+❌ Error in plugin_help_engine.py
+🔍 Scanned 3 seeds, found 131 targets.
+🌐 Scraped 76 live pages.
+📦 Rebuilt metadata for 2 repos.
+🔍 Scanned 3 seeds, found 131 targets.
+🌐 Scraped 76 live pages.
+📦 Rebuilt metadata for 2 repos.
+Traceback (most recent call last):
+  File "/home/userland/ScrapeForge/plugins/plugin_sql_ingest.py", line 4, in <module>
+    conn.execute("INSERT INTO harvest VALUES (?, ?, ?, ?, ?)", (
+sqlite3.OperationalError: table harvest has 6 columns but 5 values were supplied
+❌ Error in plugin_sql_ingest.py
+Traceback (most recent call last):
+  File "/home/userland/ScrapeForge/plugins/plugin_csv_to_sql.py", line 8, in <module>
+    conn.execute("INSERT INTO harvest VALUES (?, ?, ?, ?, ?)", (
+sqlite3.OperationalError: table harvest has 6 columns but 5 values were supplied
+❌ Error in plugin_csv_to_sql.py
+📊 Category Counts:
+ - data: 3
+ - info: 2
+📄 SQL → Markdown export complete.
+📤 SQL → JSON export complete.
+🔄 Syncing to GitHub...
+✅ Sync complete.
+Traceback (most recent call last):
+  File "/home/userland/ScrapeForge/plugins/plugin_threat_classifier.py", line 4, in <module>
+    conn.execute("ALTER TABLE harvest ADD COLUMN severity TEXT")
+sqlite3.OperationalError: duplicate column name: severity
+❌ Error in plugin_threat_classifier.py
+🧩 Dashboard UI placeholder — curses interface coming soon.
+📦 Suite packaged for resale.
+  File "/home/userland/ScrapeForge/plugins/plugin_shell_autofix.py", line 6
+    fixed = []; for line in lines:
+                ^
+SyntaxError: invalid syntax
+❌ Error in plugin_shell_autofix.py
+  File "/home/userland/ScrapeForge/plugins/plugin_help_engine.py", line 1
+    print("🧠 MALICE.OS™ Help Engine:\\n- Run: bash maliceos_plugin_runner.sh\\n- Inject: bash maliceos_auto_injector.sh\\n- Master: bash maliceos_ultimate_runner.sh\\n- View logs: cat logs/plugin_runner.log\\n- Export: see export/ folder\\n- DB query: sqlite3 output/autonomous/autonomous.db \\"SELECT * FROM harvest;\\"")
+                                                                                                                                                                                                                                                                                                            ^
+SyntaxError: invalid syntax
+❌ Error in plugin_help_engine.py
+🔍 Scanned 3 seeds, found 131 targets.
+🌐 Scraped 76 live pages.
+📦 Rebuilt metadata for 2 repos.
+🔍 Scanned 3 seeds, found 131 targets.
+🌐 Scraped 76 live pages.
+📦 Rebuilt metadata for 2 repos.
+Traceback (most recent call last):
+  File "/home/userland/ScrapeForge/plugins/plugin_sql_ingest.py", line 4, in <module>
+    conn.execute("INSERT INTO harvest VALUES (?, ?, ?, ?, ?)", (
+sqlite3.OperationalError: table harvest has 6 columns but 5 values were supplied
+❌ Error in plugin_sql_ingest.py
+Traceback (most recent call last):
+  File "/home/userland/ScrapeForge/plugins/plugin_csv_to_sql.py", line 8, in <module>
+    conn.execute("INSERT INTO harvest VALUES (?, ?, ?, ?, ?)", (
+sqlite3.OperationalError: table harvest has 6 columns but 5 values were supplied
+❌ Error in plugin_csv_to_sql.py
+📊 Category Counts:
+ - data: 3
+ - info: 2
+📄 SQL → Markdown export complete.
+📤 SQL → JSON export complete.
+🔄 Syncing to GitHub...
+✅ Sync complete.
+Traceback (most recent call last):
+  File "/home/userland/ScrapeForge/plugins/plugin_threat_classifier.py", line 4, in <module>
+    conn.execute("ALTER TABLE harvest ADD COLUMN severity TEXT")
+sqlite3.OperationalError: duplicate column name: severity
+❌ Error in plugin_threat_classifier.py
+🧩 Dashboard UI placeholder — curses interface coming soon.
+📦 Suite packaged for resale.
+  File "/home/userland/ScrapeForge/plugins/plugin_shell_autofix.py", line 6
+    fixed = []; for line in lines:
+                ^
+SyntaxError: invalid syntax
+❌ Error in plugin_shell_autofix.py
+  File "/home/userland/ScrapeForge/plugins/plugin_help_engine.py", line 1
+    print("🧠 MALICE.OS™ Help Engine:\\n- Run: bash maliceos_plugin_runner.sh\\n- Inject: bash maliceos_auto_injector.sh\\n- Master: bash maliceos_ultimate_runner.sh\\n- View logs: cat logs/plugin_runner.log\\n- Export: see export/ folder\\n- DB query: sqlite3 output/autonomous/autonomous.db \\"SELECT * FROM harvest;\\"")
+                                                                                                                                                                                                                                                                                                            ^
+SyntaxError: invalid syntax
+❌ Error in plugin_help_engine.py
+🔍 Scanned 3 seeds, found 131 targets.

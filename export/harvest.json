@@ -1,0 +1,42 @@
+[
+  {
+    "source": "sql_ingest",
+    "title": "SQL Title",
+    "url": "http://sql.com",
+    "category": "data",
+    "timestamp": "2025-10-25",
+    "severity": "high"
+  },
+  {
+    "source": "sql_ingest",
+    "title": "SQL Title",
+    "url": "http://sql.com",
+    "category": "data",
+    "timestamp": "2025-10-25",
+    "severity": "high"
+  },
+  {
+    "source": "csv_ingest",
+    "title": "Example",
+    "url": "http://example.com",
+    "category": "info",
+    "timestamp": "2025-10-25",
+    "severity": "low"
+  },
+  {
+    "source": "sql_ingest",
+    "title": "SQL Title",
+    "url": "http://sql.com",
+    "category": "data",
+    "timestamp": "2025-10-25",
+    "severity": "high"
+  },
+  {
+    "source": "csv_ingest",
+    "title": "Example",
+    "url": "http://example.com",
+    "category": "info",
+    "timestamp": "2025-10-25",
+    "severity": "low"
+  }
+]

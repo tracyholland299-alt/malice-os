@@ -1,0 +1,1 @@
+print("🧠 MALICE.OS™ Help Engine:\\n- Run: bash maliceos_plugin_runner.sh\\n- Inject: bash maliceos_auto_injector.sh\\n- Master: bash maliceos_ultimate_runner.sh\\n- View logs: cat logs/plugin_runner.log\\n- Export: see export/ folder\\n- DB query: sqlite3 output/autonomous/autonomous.db \\"SELECT * FROM harvest;\\"")

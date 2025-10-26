@@ -1,0 +1,14 @@
+[
+  {
+    "name": "tensorflow",
+    "desc": "An Open Source Machine Learning Framework for Everyone",
+    "stars": 192202,
+    "url": "https://github.com/tensorflow/tensorflow"
+  },
+  {
+    "name": "numpy",
+    "desc": "The fundamental package for scientific computing with Python.",
+    "stars": 30670,
+    "url": "https://github.com/numpy/numpy"
+  }
+]
